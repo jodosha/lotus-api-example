@@ -40,9 +40,8 @@ Install the Redis plugin for Heroku CLI
 ➜ heroku create
 ➜ heroku addons:create heroku-redis:hobby-dev
 ➜ git push heroku master
+➜ heroku open
 ```
-
-Then visit `/books`
 
 ## Copyright
 
