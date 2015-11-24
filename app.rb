@@ -20,7 +20,7 @@ module Bookshelf
 
     class Repository
       def initialize
-        @connection = Redis.new
+        @connection = Redis.new(url: ENV['REDIS_URL'])
       end
 
       def clear

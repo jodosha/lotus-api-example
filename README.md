@@ -6,6 +6,7 @@ This is an example JSON API application built with Lotus.
 
   * Ruby 2+ (with Bundler)
   * Redis
+  * Heroku CLI (for deployment)
 
 ## Development
 
@@ -28,6 +29,20 @@ Run the test suite via Rake.
 ## Deployment
 
 ### Heroku
+
+Install the Redis plugin for Heroku CLI
+
+```shell
+➜ heroku plugins:install heroku-redis
+```
+
+```shell
+➜ heroku create
+➜ heroku addons:create heroku-redis:hobby-dev
+➜ git push heroku master
+```
+
+Then visit `/books`
 
 ## Copyright
 
